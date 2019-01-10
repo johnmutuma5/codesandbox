@@ -1,5 +1,5 @@
-const fetchApiGreetingPromise = new Promise((res, rej) => {
-  const timeOutCallback = () => res("Hello Ronnie");
+const fetchApiGreetingPromise = new Promise((resolve, reject) => {
+  const timeOutCallback = () => resolve("Hello Ronnie");
   setTimeout(timeOutCallback, 5000);
 });
 
